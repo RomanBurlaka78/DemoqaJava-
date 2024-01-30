@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BaseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/ProjectUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/LoginTest.java" afterDir="false" />
+    <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsCheckBoxPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsTextBoxPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BaseConfigurationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/ProjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/ProjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/LoginTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,40 +32,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
   <component name="ProjectId" id="2b5sD2TRLDzPBWo1entReqeixDv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.LoginTest.executor": "Run",
-    "TestNG.LoginTest.testLogin.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
-  }
-}]]></component>
-  <component name="RunManager" selected="TestNG.LoginTest.testLogin (1)">
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="szablon_javaTest" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="TestNG.ElementsPageTests.testVerifyTextBox (1)">
+    <configuration name="ElementsPageTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoqa_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="automatiom.tests.base.tests.*" />
+          <option name="PATTERN" value="automatiom.tests.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="automatiom.tests.base.tests.LoginTest" />
+      <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -75,7 +61,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testLogin (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ElementsPageTests.testGoToElementsPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="szablon_javaTest" />
       <extension name="coverage">
         <pattern>
@@ -84,8 +70,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
-      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.LoginTest" />
-      <option name="METHOD_NAME" value="testLogin" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTests" />
+      <option name="METHOD_NAME" value="testGoToElementsPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -93,17 +79,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="szablon_javaTest" />
+    <configuration name="ElementsPageTests.testVerifyTextBox (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoqa_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="automatiom.tests.base.tests.*" />
+          <option name="PATTERN" value="automatiom.tests.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="automatiom.tests.base.tests.LoginTest" />
-      <option name="METHOD_NAME" value="testLogin" />
+      <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTests" />
+      <option name="METHOD_NAME" value="testVerifyTextBox" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElementsPageTests.testVerifyTextBox" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="szablon_javaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automatiom.tests.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTests" />
+      <option name="METHOD_NAME" value="testVerifyTextBox" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElementsPageTests.testVerifyTextBoxForm (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoqa_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automatiom.tests.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTests" />
+      <option name="METHOD_NAME" value="testVerifyTextBoxForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -113,11 +135,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.testLogin (1)" />
-        <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.LoginTest.testLogin" />
+        <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBox (1)" />
+        <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBoxForm (1)" />
+        <item itemvalue="TestNG.ElementsPageTests (1)" />
+        <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBox" />
+        <item itemvalue="TestNG.ElementsPageTests.testGoToElementsPage" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

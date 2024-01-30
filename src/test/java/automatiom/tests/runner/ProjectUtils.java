@@ -18,7 +18,7 @@ import java.util.Properties;
 public class ProjectUtils {
 
     private static final String PREFIX_PROP = "https://";
-    private static final String PROP_HOST = PREFIX_PROP + "demo.guru99.com/V4/";
+    private static final String PROP_HOST = PREFIX_PROP + "demoqa.com/";
     private static final String CLOSE_BROWSER_IF_ERROR = PREFIX_PROP + "closeBrowserIfError";
     private static Properties properties;
 

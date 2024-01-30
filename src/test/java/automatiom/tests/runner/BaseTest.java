@@ -34,7 +34,7 @@ public abstract class BaseTest {
     }
 
     private void getWeb() {
-        ProjectUtils.log("Get web page: https://demo.guru99.com/");
+        ProjectUtils.log("Get web page: https://demoqa.com/");
         ProjectUtils.get(driver);
     }
 
@@ -112,9 +112,15 @@ public abstract class BaseTest {
 
     @AfterMethod
     protected void afterMethod(Method method, ITestResult testResult) {
+
         if (ProjectUtils.isServerRun() && !testResult.isSuccess()) {
             ProjectUtils.takeScreenshot(driver, method.getName(), this.getClass().getName());
+
         }
+        if (ProjectUtils.isServerRun() && testResult.isSuccess()) {
+            closeDriver();
+        }
+
 
         if ( !(!ProjectUtils.isServerRun() && !testResult.isSuccess() && !ProjectUtils.closeBrowserIfError())) {
             stopDriver();
