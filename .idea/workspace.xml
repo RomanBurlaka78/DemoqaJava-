@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsTextBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsTextBoxPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BaseConfigurationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BaseConfigurationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Interface_Colections" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../szablon_javaTest" />
   </component>
   <component name="RunManager" selected="TestNG.ElementsPageTests (1)">
     <configuration name="ElementsPageTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
