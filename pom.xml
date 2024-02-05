@@ -7,9 +7,6 @@
     <groupId>org.example</groupId>
     <artifactId>szablon_javaTest</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <build>
-
-    </build>
 
 
     <properties>

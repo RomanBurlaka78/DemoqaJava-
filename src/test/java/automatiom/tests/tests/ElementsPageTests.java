@@ -9,10 +9,10 @@ import org.testng.Assert;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
-import java.util.List;
-
 public class ElementsPageTests extends BaseTest {
+
+//    private  static  final USER_NAME= "Robert";
+
 
     private ElementsTextBoxPage titleOfTextBoxElementsPage;
 
@@ -20,55 +20,55 @@ public class ElementsPageTests extends BaseTest {
     @Test
     public void testGetTitle() {
         String homePage = new HomePage(getDriver())
-                .acceptCookies()
+                .accetpCookies()
                 .getTitleOfPage();
 
         Assert.assertEquals(homePage, "DEMOQA");
+
     }
 
     @Test
     public void testGoToElementsPage() {
         String elementsPage = new HomePage(getDriver())
-                .acceptCookies()
-                .scrollPage()
+                .accetpCookies()
+                .ScrollPage()
                 .goToElementsPage()
                 .getUrlOfPage();
 
 
         Assert.assertEquals(elementsPage, "https://demoqa.com/elements");
+
     }
 
 
     @Test
     public void testVerifyTextBox() {
         String titleOfTextBoxElementsPage = new HomePage(getDriver())
-                .acceptCookies()
-                .scrollPage()
+                .accetpCookies()
+                .ScrollPage()
                 .goToElementsPage()
                 .showElementsContent()
                 .showTextBoxText()
                 .getTitleOfPage();
 
         Assert.assertEquals(titleOfTextBoxElementsPage, "Text Box");
+
     }
 
-
     @Test
-    public void testVerifyTextBoxForm() throws InterruptedException {
-        HashMap<String, String> titleOfTextBoxElementsPage = new HomePage(getDriver())
-                .acceptCookies()
-                .scrollPage()
+    public void testVerifyTextBoxForm() {
+        String titleOfTextBoxElementsPage = new HomePage(getDriver())
+                .accetpCookies()
+                .ScrollPage()
                 .goToElementsPage()
                 .showElementsContent()
                 .clickGotoNewPage()
-                .fillForm("Robert", "qwe222@gmail.com", "Florida", "Aveny101")
-                .scrollPage()
-                .submitForm()
-                .getUserInformation();
-        Boolean mapExist = new ElementsTextBoxPage(getDriver())
-                .checkUserInformation();
+                .fillUserForm("Robert", "qwe222@gmail.com")
+                .getTitleOfPage();
 
-        Assert.assertTrue(mapExist);
+
+
+        Assert.assertEquals(titleOfTextBoxElementsPage, "Text Box");
 
     }
 

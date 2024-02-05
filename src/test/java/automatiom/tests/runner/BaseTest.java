@@ -1,7 +1,6 @@
 package automatiom.tests.runner;
 
 
-import automatiom.tests.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -65,7 +64,6 @@ public abstract class BaseTest {
             ProjectUtils.log("Browser closed");
         }
     }
-
 
 
     @BeforeMethod

@@ -34,13 +34,13 @@ public class HomePage  extends BaseConfigurationPage<HomePage> {
         return new ElementsPage(getDriver());
     }
 
-    public HomePage scrollPage() {
+    public HomePage ScrollPage() {
         getActions().scrollByAmount(100, 1000).perform();
 
         return this;
 
     }
-    public HomePage acceptCookies(){
+    public HomePage accetpCookies(){
         try {
             acceptCookies.click();
         }

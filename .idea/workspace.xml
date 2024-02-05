@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsCheckBoxPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsTextBoxPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BaseConfigurationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/ProjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/ProjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/LoginTest.java" beforeDir="false" />
+>>>>>>> parent of 938599c (refactor testVerifyTextBoxForm)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +44,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../szablon_javaTest" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> parent of 938599c (refactor testVerifyTextBoxForm)
   </component>
-  <component name="RunManager" selected="TestNG.ElementsPageTests (1)">
+  <component name="RunManager" selected="TestNG.ElementsPageTests.testVerifyTextBox (1)">
     <configuration name="ElementsPageTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="demoqa_java" />
       <extension name="coverage">
@@ -125,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ElementsPageTests (1)" />
-        <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBoxForm (1)" />
         <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBox (1)" />
+        <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBoxForm (1)" />
+        <item itemvalue="TestNG.ElementsPageTests (1)" />
         <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBox" />
         <item itemvalue="TestNG.ElementsPageTests.testGoToElementsPage" />
       </list>
