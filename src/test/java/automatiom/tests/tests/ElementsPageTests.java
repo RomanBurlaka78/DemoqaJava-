@@ -35,7 +35,7 @@ public class ElementsPageTests extends BaseTest {
     public void testGoToElementsPage() {
         String elementsPage = new HomePage(getDriver())
                 .accetpCookies()
-                .ScrollPage()
+                .scrollPage()
                 .goToElementsPage()
                 .getUrlOfPage();
 
@@ -49,7 +49,7 @@ public class ElementsPageTests extends BaseTest {
     public void testVerifyTextBox() {
         String titleOfTextBoxElementsPage = new HomePage(getDriver())
                 .accetpCookies()
-                .ScrollPage()
+                .scrollPage()
                 .goToElementsPage()
                 .showElementsContent()
                 .showTextBoxText()
@@ -63,14 +63,15 @@ public class ElementsPageTests extends BaseTest {
     public void testVerifyTextBoxForm() {
         String titleOfTextBoxElementsPage = new HomePage(getDriver())
                 .accetpCookies()
-                .ScrollPage()
+                .scrollPage()
                 .goToElementsPage()
                 .showElementsContent()
                 .clickGotoNewPage()
-                .fillUserForm("Robert", "qwe222@gmail.com")
-                .getTitleOfPage();
+                .fillForm("Robert", "qwerty@gmail.com", "Berlin 112", "S.Schtrasse 22")
+                .submitForm()
+                .showSubmitForm();
 
-        Assert.assertEquals(titleOfTextBoxElementsPage, "Text Box");
+        Assert.assertEquals(titleOfTextBoxElementsPage, "Name:RobertEmail:qwerty@gmail.comCurrent Address :Berlin 112Permananet Address :S.Schtrasse 22");
 
     }
 
