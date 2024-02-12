@@ -11,7 +11,11 @@ import org.testng.annotations.Test;
 
 public class ElementsPageTests extends BaseTest {
 
-//    private  static  final USER_NAME= "Robert";
+    private static final String ELEMENTS_PAGE = "https://demoqa.com/elements";
+    private static final String HOMEPAGE_TITLE = "DEMOQA";
+
+
+
 
 
     private ElementsTextBoxPage titleOfTextBoxElementsPage;
@@ -23,7 +27,7 @@ public class ElementsPageTests extends BaseTest {
                 .accetpCookies()
                 .getTitleOfPage();
 
-        Assert.assertEquals(homePage, "DEMOQA");
+        Assert.assertEquals(homePage, HOMEPAGE_TITLE);
 
     }
 
@@ -36,7 +40,7 @@ public class ElementsPageTests extends BaseTest {
                 .getUrlOfPage();
 
 
-        Assert.assertEquals(elementsPage, "https://demoqa.com/elements");
+        Assert.assertEquals(elementsPage, ELEMENTS_PAGE);
 
     }
 
@@ -65,8 +69,6 @@ public class ElementsPageTests extends BaseTest {
                 .clickGotoNewPage()
                 .fillUserForm("Robert", "qwe222@gmail.com")
                 .getTitleOfPage();
-
-
 
         Assert.assertEquals(titleOfTextBoxElementsPage, "Text Box");
 
