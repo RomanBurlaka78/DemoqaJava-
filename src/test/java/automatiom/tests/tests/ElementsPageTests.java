@@ -21,7 +21,7 @@ public class ElementsPageTests extends BaseTest {
     private ElementsTextBoxPage titleOfTextBoxElementsPage;
 
 
-    @Test
+    @Test()
     public void testGetTitle() {
         String homePage = new HomePage(getDriver())
                 .accetpCookies()

@@ -25,7 +25,7 @@ public  class ElementsPage extends BaseConfigurationPage<ElementsTextBoxPage> {
     }
 
 
-    @FindBy(xpath  ="//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[1]/span/div/div[2]")
+    @FindBy(xpath  ="//div[@class = 'accordion']//div[@class='element-group'][1]")
     WebElement sectionElements;
 
     @FindBy(xpath = "//span[contains(text(), 'Text Box')]")

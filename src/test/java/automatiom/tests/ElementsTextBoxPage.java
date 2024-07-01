@@ -19,7 +19,7 @@ public class ElementsTextBoxPage  extends BaseConfigurationPage<ElementsTextBoxP
         return new ElementsTextBoxPage(getDriver());
     }
 
-    @FindBy(xpath = "//*[@id='app']/div/div/div[1]/div")
+    @FindBy(xpath = "//h1[@class='text-center']")
     WebElement titleOfTextBoxPage;
     @FindBy(id = "userName")
     WebElement userName;
