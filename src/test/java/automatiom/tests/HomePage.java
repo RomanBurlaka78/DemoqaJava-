@@ -17,7 +17,7 @@ public class HomePage  extends BaseConfigurationPage<HomePage> {
     }
 
 
-    @FindBy(xpath = "//*[@id='app']/div/div/div[2]/div/div[1]")
+    @FindBy(xpath = "//div[@class = 'category-cards']/div[@class ='card mt-4 top-card'][1]")
     WebElement getNewPage;
 
     @FindBy(xpath = "//button[@aria-label = 'Zgadzam się']")

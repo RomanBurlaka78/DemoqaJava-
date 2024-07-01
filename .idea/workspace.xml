@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsTextBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsTextBoxPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -39,21 +44,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.szablon_javaTest [test].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.ElementsPageTests.testVerifyTextBox (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ElementsPageTests.testVerifyTextBox.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ElementsPageTests.testVerifyTextBoxForm.executor&quot;: &quot;Run&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.szablon_javaTest [test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.ElementsPageTests.testGetTitle.executor": "Run",
+    "TestNG.ElementsPageTests.testGoToElementsPage.executor": "Run",
+    "TestNG.ElementsPageTests.testVerifyTextBox (1).executor": "Run",
+    "TestNG.ElementsPageTests.testVerifyTextBox.executor": "Run",
+    "TestNG.ElementsPageTests.testVerifyTextBoxForm.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Disk D/RedRover.shools/automationExercise_java"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.ElementsPageTests.testVerifyTextBoxForm">
-    <configuration name="ElementsPageTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="demoqa_java" />
+}]]></component>
+  <component name="RunManager" selected="TestNG.ElementsPageTests.testVerifyTextBox">
+    <configuration name="ElementsPageTests.testGetTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="szablon_javaTest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="automatiom.tests.tests.*" />
@@ -62,7 +70,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
       <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testGetTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElementsPageTests.testGoToElementsPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="szablon_javaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automatiom.tests.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTests" />
+      <option name="METHOD_NAME" value="testGoToElementsPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -105,24 +132,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElementsPageTests.testVerifyTextBoxForm (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="demoqa_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="automatiom.tests.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
-      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTests" />
-      <option name="METHOD_NAME" value="testVerifyTextBoxForm" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ElementsPageTests.testVerifyTextBoxForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="szablon_javaTest" />
       <extension name="coverage">
@@ -143,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBoxForm" />
         <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBox" />
+        <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBoxForm" />
+        <item itemvalue="TestNG.ElementsPageTests.testGoToElementsPage" />
+        <item itemvalue="TestNG.ElementsPageTests.testGetTitle" />
         <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBox (1)" />
-        <item itemvalue="TestNG.ElementsPageTests.testVerifyTextBoxForm (1)" />
-        <item itemvalue="TestNG.ElementsPageTests (1)" />
       </list>
     </recent_temporary>
   </component>
