@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/SelectPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/WidgetsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/windows_widgets/SelectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsCheckBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/CheckBoxPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsTextBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/TextBoxPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BaseConfigurationPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,44 +38,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.DemoqaJava [clean].executor": "Run",
-    "Maven.DemoqaJava [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.DemoqaJava [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor": "Run",
-    "Maven.DemoqaJava [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor": "Run",
-    "Maven.DemoqaJava [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor": "Run",
-    "Maven.DemoqaJava [org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources].executor": "Run",
-    "Maven.DemoqaJava [test].executor": "Run",
-    "Maven.szablon_javaTest [clean].executor": "Run",
-    "Maven.szablon_javaTest [test].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.ElementsPageTests.testGetTitle.executor": "Run",
-    "TestNG.ElementsPageTests.testGoToElementsPage.executor": "Run",
-    "TestNG.ElementsPageTests.testTitleOfPage.executor": "Run",
-    "TestNG.ElementsPageTests.testVerifyCheckBox.executor": "Run",
-    "TestNG.ElementsPageTests.testVerifyTextBox (1).executor": "Run",
-    "TestNG.ElementsPageTests.testVerifyTextBox.executor": "Run",
-    "TestNG.ElementsPageTests.testVerifyTextBoxForm.executor": "Run",
-    "TestNG.SelectTest.executor": "Run",
-    "TestNG.SelectTest.testMultiSelectCars.executor": "Run",
-    "TestNG.SelectTest.testSelectValue.executor": "Run",
-    "TestNG.SelectTest.testVerifySelect.executor": "Run",
-    "TestNG.SelectTest.testVerifySelectItemColor.executor": "Run",
-    "TestNG.SelectTest.testVerifySelectItemGreen.executor": "Run",
-    "TestNG.SelectTest.testVerifySelectItemRed.executor": "Run",
-    "TestNG.SelectTest.testVerifySelectItems.executor": "Run",
-    "TestNG.SelectTest.testVerifySelectPage.executor": "Run",
-    "TestNG.SelectTest.testVerifyTitleOfPage.executor": "Run",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Disk D/!RedRover.shools/demoqa_java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.DemoqaJava [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DemoqaJava [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DemoqaJava [org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DemoqaJava [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DemoqaJava [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DemoqaJava [org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DemoqaJava [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.szablon_javaTest [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.szablon_javaTest [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.ElementsPageTests.testGetTitle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ElementsPageTests.testGoToElementsPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ElementsPageTests.testTitleOfPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ElementsPageTests.testVerifyCheckBox.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ElementsPageTests.testVerifyTextBox (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ElementsPageTests.testVerifyTextBox.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ElementsPageTests.testVerifyTextBoxForm.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.testMultiSelectCars.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.testSelectValue.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.testVerifySelect.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.testVerifySelectItemColor.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.testVerifySelectItemGreen.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.testVerifySelectItemRed.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.testVerifySelectItems.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.testVerifySelectPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelectTest.testVerifyTitleOfPage.executor&quot;: &quot;Run&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Disk D/!RedRover.shools/demoqa_java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.ElementsPageTests.testTitleOfPage">
     <configuration name="ElementsPageTests.testTitleOfPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="szablon_javaTest" />

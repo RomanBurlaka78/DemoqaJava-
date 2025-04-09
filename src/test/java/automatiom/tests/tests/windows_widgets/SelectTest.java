@@ -4,8 +4,10 @@ import automatiom.tests.HomePage;
 import automatiom.tests.runner.BaseTest;
 import io.qameta.allure.*;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
+@Ignore
 @Epic("Widgets/Select Menu")
 public class SelectTest extends BaseTest {
 

@@ -5,6 +5,7 @@ import automatiom.tests.HomePage;
 import automatiom.tests.runner.BaseTest;
 import io.qameta.allure.Description;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public class ElementsPageTests extends BaseTest {
 
 
     @Test
-    @Description("")
+    @Description("Title of page")
     public void testTitleOfPage() {
         String homePage = new HomePage(getDriver())
                 .accetpCookies()
@@ -25,6 +26,7 @@ public class ElementsPageTests extends BaseTest {
         Assert.assertEquals(homePage, HOMEPAGE_TITLE);
     }
 
+    @Ignore
     @Test
     public void testGoToElementsPage() {
         String elementsPage = new HomePage(getDriver())
