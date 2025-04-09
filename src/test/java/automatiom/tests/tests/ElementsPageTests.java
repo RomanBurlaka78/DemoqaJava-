@@ -1,13 +1,13 @@
 package automatiom.tests.tests;
 
-import automatiom.tests.ElementsTextBoxPage;
+import automatiom.tests.TextBoxPage;
 import automatiom.tests.HomePage;
 import automatiom.tests.runner.BaseTest;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import io.qameta.allure.Description;
 import org.testng.Assert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class ElementsPageTests extends BaseTest {
 
@@ -15,20 +15,14 @@ public class ElementsPageTests extends BaseTest {
     private static final String HOMEPAGE_TITLE = "DEMOQA";
 
 
-
-
-
-    private ElementsTextBoxPage titleOfTextBoxElementsPage;
-
-
-    @Test()
-    public void testGetTitle() {
+    @Test
+    @Description("")
+    public void testTitleOfPage() {
         String homePage = new HomePage(getDriver())
                 .accetpCookies()
                 .getTitleOfPage();
 
         Assert.assertEquals(homePage, HOMEPAGE_TITLE);
-
     }
 
     @Test
@@ -39,11 +33,8 @@ public class ElementsPageTests extends BaseTest {
                 .goToElementsPage()
                 .getUrlOfPage();
 
-
         Assert.assertEquals(elementsPage, ELEMENTS_PAGE);
-
     }
-
 
     @Test
     public void testVerifyTextBox() {
@@ -66,13 +57,27 @@ public class ElementsPageTests extends BaseTest {
                 .scrollPage()
                 .goToElementsPage()
                 .showElementsContent()
-                .clickGotoNewPage()
+                .goToTextboxPage()
                 .fillForm("Robert", "qwerty@gmail.com", "Berlin 112", "S.Schtrasse 22")
                 .submitForm()
                 .showSubmitForm();
 
         Assert.assertEquals(titleOfTextBoxElementsPage, "Name:RobertEmail:qwerty@gmail.comCurrent Address :Berlin 112Permananet Address :S.Schtrasse 22");
 
+    }
+
+    @Test
+    public void testVerifyCheckBox() {
+        Boolean checkBoxAllElementsChecked = new HomePage(getDriver())
+                .accetpCookies()
+                .scrollPage()
+                .goToElementsPage()
+                .showElementsContent()
+                .showCheckText()
+                .confirmCheckAll()
+                .resultChecked();
+
+        Assert.assertEquals(checkBoxAllElementsChecked, true, "Not visible");
     }
 
 }

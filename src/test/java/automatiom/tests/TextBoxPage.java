@@ -1,23 +1,18 @@
 package automatiom.tests;
 
-import automatiom.tests.base.BaseConfigurationPage;
+import automatiom.tests.base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.HashMap;
 
-public class ElementsTextBoxPage  extends BaseConfigurationPage<ElementsTextBoxPage> {
+public class TextBoxPage extends BasePage {
 
-
-    public ElementsTextBoxPage(WebDriver driver) {
+    public TextBoxPage(WebDriver driver) {
         super(driver);
     }
 
-    @Override
-    protected ElementsTextBoxPage createNewPage() {
-        return new ElementsTextBoxPage(getDriver());
-    }
 
     @FindBy(xpath = "//h1[@class='text-center']")
     WebElement titleOfTextBoxPage;
@@ -46,7 +41,7 @@ public class ElementsTextBoxPage  extends BaseConfigurationPage<ElementsTextBoxP
         return titleOfTextBoxPage.getText();
     }
 
-    public ElementsTextBoxPage fillUserForm(String name, String email) {
+    public TextBoxPage fillUserForm(String name, String email) {
         userName.clear();
         userName.sendKeys(name);
         userEmail.clear();
@@ -55,7 +50,7 @@ public class ElementsTextBoxPage  extends BaseConfigurationPage<ElementsTextBoxP
         return this;
     }
 
-    public ElementsTextBoxPage fillForm(String name, String email, String cAddress, String pAddress ) {
+    public TextBoxPage fillForm(String name, String email, String cAddress, String pAddress ) {
         HashMap<String, String> listOfElements = new HashMap<>();
         listOfElements.put("name", name);
         listOfElements.put("email", email);
@@ -74,7 +69,7 @@ public class ElementsTextBoxPage  extends BaseConfigurationPage<ElementsTextBoxP
         return this;
     }
 
-    public ElementsTextBoxPage submitForm() {
+    public TextBoxPage submitForm() {
         getActions().scrollByAmount(100, 1000).perform();
         submitFormButton.click();
 

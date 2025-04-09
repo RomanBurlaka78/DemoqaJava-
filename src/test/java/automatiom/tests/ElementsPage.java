@@ -1,27 +1,13 @@
 package automatiom.tests;
 
-import automatiom.tests.base.BaseConfigurationPage;
 import automatiom.tests.base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public  class ElementsPage extends BaseConfigurationPage<ElementsTextBoxPage> {
+public  class ElementsPage extends BasePage {
     public ElementsPage(WebDriver driver) {
         super(driver);
-    }
-
-    @Override
-    protected ElementsTextBoxPage createNewPage() {
-        return null;
-    }
-
-    @Override
-    public ElementsTextBoxPage clickGotoNewPage() {
-        getActions().scrollByAmount(100, 1000).perform();
-        getTextBox.click();
-
-        return new ElementsTextBoxPage(getDriver());
     }
 
 
@@ -30,6 +16,10 @@ public  class ElementsPage extends BaseConfigurationPage<ElementsTextBoxPage> {
 
     @FindBy(xpath = "//span[contains(text(), 'Text Box')]")
     WebElement getTextBox;
+
+//    @FindBy(xpath = "//span[contains(text(), 'Check Box')]")
+    WebElement getCheckBox;
+
 
     public String getUrlOfPage() {
 
@@ -44,9 +34,21 @@ public  class ElementsPage extends BaseConfigurationPage<ElementsTextBoxPage> {
         return this;
     }
 
-    public ElementsTextBoxPage showTextBoxText() {
+    public TextBoxPage  showTextBoxText() {
         getTextBox.click();
-        return new ElementsTextBoxPage(getDriver());
+
+        return new TextBoxPage(getDriver());
+    }
+
+    public CheckBoxPage showCheckText() {
+        getCheckBox.click();
+
+        return new CheckBoxPage(getDriver());
+    }
+    public TextBoxPage goToTextboxPage() {
+        getTextBox.click();
+
+        return new TextBoxPage(getDriver());
     }
 
 

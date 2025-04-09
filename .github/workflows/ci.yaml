@@ -1,4 +1,4 @@
-name: CI
+name: DemoQA Tests CI
 
 on:
   pull_request:
@@ -10,26 +10,68 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Git clone
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Install JDK
+      - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
           distribution: 'corretto'
           java-version: '17'
           cache: 'maven'
 
-      - name: Get list of changed files
-        run: echo "LIST_OF_CHANGED_FILES=$(git diff --name-only origin/$GITHUB_HEAD_REF $(git merge-base origin/$GITHUB_HEAD_REF origin/main) | tr '\n' ';')" >> $GITHUB_ENV
+      - name: Get changed files
+        id: changed-files
+        run: |
+          echo "LIST_OF_CHANGED_FILES=$(git diff --name-only origin/$GITHUB_HEAD_REF $(git merge-base origin/$GITHUB_HEAD_REF origin/main) | tr '\n' ';')" >> $GITHUB_ENV
+          echo "Changed files: $LIST_OF_CHANGED_FILES"
 
-      - name: Attach screenshots and reports
-        uses: actions/upload-artifact@v3
+      - name: Run Maven tests
+        run: mvn clean test
+
+      - name: Attach screenshots
         if: failure()
+        uses: actions/upload-artifact@v4
         with:
-          name: screenshots-and-report
+          name: screenshots
+          path: ${{ github.workspace }}/screenshots
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
           path: |
-            screenshots
-            target/surefire-reports/emailable-report.html
+            target/surefire-reports/**
+            screenshots/**
+
+      - name: Get Allure history
+        uses: actions/checkout@v4
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Build Allure report
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        id: allure-report
+        with:
+          allure_results: target/allure-results
+          gh_pages: gh-pages
+          allure_report: allure-report
+          allure_history: allure-history
+
+      - name: Check Allure results
+        run: ls -la target/allure-results
+
+      - name: Publish Allure report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
