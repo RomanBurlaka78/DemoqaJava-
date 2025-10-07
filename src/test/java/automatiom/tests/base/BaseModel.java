@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-abstract class BaseModel {
+abstract class BaseModel<T> {
 
     private WebDriverWait wait2;
     private WebDriverWait wait5;
@@ -47,4 +47,5 @@ abstract class BaseModel {
 
         return wait10;
     }
+
 }

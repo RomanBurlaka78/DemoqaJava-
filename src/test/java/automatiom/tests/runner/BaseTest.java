@@ -18,6 +18,7 @@ public abstract class BaseTest {
     private WebDriverWait wait10;
 
 
+
     private void startDriver() {
         ProjectUtils.log("Browser open");
 

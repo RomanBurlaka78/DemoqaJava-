@@ -1,15 +1,13 @@
 package automatiom.tests.tests;
 
+import automatiom.tests.ElementsPage;
 import automatiom.tests.ElementsTextBoxPage;
 import automatiom.tests.HomePage;
 import automatiom.tests.runner.BaseTest;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class ElementsPageTests extends BaseTest {
+public class ElementsPageTest extends BaseTest {
 
     private static final String ELEMENTS_PAGE = "https://demoqa.com/elements";
     private static final String HOMEPAGE_TITLE = "DEMOQA";
@@ -36,7 +34,7 @@ public class ElementsPageTests extends BaseTest {
         String elementsPage = new HomePage(getDriver())
                 .accetpCookies()
                 .scrollPage()
-                .goToElementsPage()
+                .goToPage("Elements", new ElementsPage(getDriver()))
                 .getUrlOfPage();
 
 

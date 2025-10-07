@@ -4,7 +4,7 @@ import automatiom.tests.base.BaseModel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public abstract class BasePage extends BaseModel {
+public abstract class BasePage extends BaseModel <BasePage> {
 
     private Actions actions;
 

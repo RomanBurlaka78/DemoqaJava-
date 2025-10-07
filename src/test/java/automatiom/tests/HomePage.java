@@ -2,6 +2,7 @@ package automatiom.tests;
 
 import automatiom.tests.base.BaseConfigurationPage;
 import automatiom.tests.base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -48,6 +49,12 @@ public class HomePage  extends BaseConfigurationPage<HomePage> {
             System.out.println("Not such element on the page");
         }
         return this;
+    }
+
+    public <T> T goToPage(String name, T page) {
+        getDriver().findElement(By.xpath(String.format("//h5[text()= '%s']", name))).click();
+
+        return  page;
     }
 
 
