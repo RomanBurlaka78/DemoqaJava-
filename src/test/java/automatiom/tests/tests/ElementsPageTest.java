@@ -4,8 +4,14 @@ import automatiom.tests.ElementsPage;
 import automatiom.tests.ElementsTextBoxPage;
 import automatiom.tests.HomePage;
 import automatiom.tests.runner.BaseTest;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+@Epic("Selenium elements")
+@Feature("Elements")
 
 public class ElementsPageTest extends BaseTest {
 
@@ -19,7 +25,7 @@ public class ElementsPageTest extends BaseTest {
     private ElementsTextBoxPage titleOfTextBoxElementsPage;
 
 
-    @Test()
+    @Test
     public void testGetTitle() {
         String homePage = new HomePage(getDriver())
                 .accetpCookies()
@@ -44,6 +50,7 @@ public class ElementsPageTest extends BaseTest {
 
 
     @Test
+    @Story("Text box")
     public void testVerifyTextBox() {
         String titleOfTextBoxElementsPage = new HomePage(getDriver())
                 .accetpCookies()
@@ -58,6 +65,7 @@ public class ElementsPageTest extends BaseTest {
     }
 
     @Test
+    @Story("Text box")
     public void testVerifyTextBoxForm() {
         String titleOfTextBoxElementsPage = new HomePage(getDriver())
                 .accetpCookies()

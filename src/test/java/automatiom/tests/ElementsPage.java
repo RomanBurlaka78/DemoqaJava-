@@ -2,6 +2,7 @@ package automatiom.tests;
 
 import automatiom.tests.base.BaseConfigurationPage;
 import automatiom.tests.base.BasePage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,7 +26,7 @@ public  class ElementsPage extends BaseConfigurationPage<ElementsTextBoxPage> {
     }
 
 
-    @FindBy(xpath  ="//div[@class = 'accordion']//div[@class='element-group'][1]")
+    @FindBy(xpath = "//div[@class = 'accordion']//div[@class='element-group'][1]")
     WebElement sectionElements;
 
     @FindBy(xpath = "//span[contains(text(), 'Text Box')]")
@@ -36,6 +37,7 @@ public  class ElementsPage extends BaseConfigurationPage<ElementsTextBoxPage> {
         return getDriver().getCurrentUrl();
     }
 
+    @Step("Show elements content")
     public ElementsPage showElementsContent() {
         sectionElements.click();
         getDriver().navigate().back();
@@ -44,11 +46,11 @@ public  class ElementsPage extends BaseConfigurationPage<ElementsTextBoxPage> {
         return this;
     }
 
+    @Step("Show text box")
     public ElementsTextBoxPage showTextBoxText() {
         getTextBox.click();
         return new ElementsTextBoxPage(getDriver());
     }
-
 
 
 }
