@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1","testGetTitle","Surefire suite","Wed Oct 08 19:51:44 UTC 2025","skipped","Wed Oct 08 19:51:44 UTC 2025","automatiom.tests.tests.ElementsPageTest","Surefire test","automatiom.tests.tests.ElementsPageTest","testGetTitle"
+"","2","beforeMethod","Surefire suite","Wed Oct 08 19:51:44 UTC 2025","broken","Wed Oct 08 19:51:44 UTC 2025","automatiom.tests.tests.ElementsPageTest","Surefire test","automatiom.tests.tests.ElementsPageTest","beforeMethod"
+"","0","testVerifyTextBox","Surefire suite","Wed Oct 08 19:51:44 UTC 2025","skipped","Wed Oct 08 19:51:44 UTC 2025","automatiom.tests.tests.ElementsPageTest","Surefire test","automatiom.tests.tests.ElementsPageTest","testVerifyTextBox"
+"","1","testVerifyTextBoxForm","Surefire suite","Wed Oct 08 19:51:44 UTC 2025","skipped","Wed Oct 08 19:51:44 UTC 2025","automatiom.tests.tests.ElementsPageTest","Surefire test","automatiom.tests.tests.ElementsPageTest","testVerifyTextBoxForm"
+"","0","testGoToElementsPage","Surefire suite","Wed Oct 08 19:51:44 UTC 2025","skipped","Wed Oct 08 19:51:44 UTC 2025","automatiom.tests.tests.ElementsPageTest","Surefire test","automatiom.tests.tests.ElementsPageTest","testGoToElementsPage"
