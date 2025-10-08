@@ -13,7 +13,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <allure.version>2.24.0</allure.version>
-        <aspect.version>1.9.20.1</aspect.version>
+        <aspectj.version>1.9.22</aspectj.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -72,9 +72,18 @@
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>
                         <!--suppress UnresolvedMavenProperty -->
-                        <version>1.9.22</version>
+                        <version>${aspectj.version}</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+            <!-- Allure plugin -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.12.0</version>
+                <configuration>
+                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+                </configuration>
             </plugin>
         </plugins>
 
