@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BaseModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/ElementsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,18 +32,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RomanBurlaka78"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RomanBurlaka78&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RomanBurlaka78/DemoqaJava-.git",
-    "accountId": "bc05234d-3816-4ee0-9a85-a3a7ea48eb65"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RomanBurlaka78/DemoqaJava-.git&quot;,
+    &quot;accountId&quot;: &quot;bc05234d-3816-4ee0-9a85-a3a7ea48eb65&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -61,6 +61,7 @@
     "Maven.szablon_javaTest [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.ElementsPageTest.testGoToElementsPage.executor": "Run",
     "TestNG.ElementsPageTests.executor": "Run",
@@ -69,12 +70,18 @@
     "TestNG.ElementsPageTests.testVerifyTextBox (1).executor": "Run",
     "TestNG.ElementsPageTests.testVerifyTextBox.executor": "Run",
     "TestNG.ElementsPageTests.testVerifyTextBoxForm.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "test",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Disk D/RedRover.shools/automationExercise_java"
+    "last_opened_file_path": "C:/Disk D/RedRover.shools/automationExercise_java",
+    "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\1_Java\DemoqaJava-\src\test" />
+    </key>
+  </component>
   <component name="RunManager" selected="TestNG.ElementsPageTest.testGoToElementsPage">
     <configuration name="ElementsPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="szablon_javaTest" />
@@ -168,7 +175,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ElementsPageTest.testGoToElementsPage" />
-        <item itemvalue="TestNG.ElementsPageTests" />
         <item itemvalue="TestNG.ElementsPageTest.testVerifyTextBox" />
         <item itemvalue="TestNG.ElementsPageTest.testVerifyTextBoxForm" />
         <item itemvalue="TestNG.ElementsPageTest.testGetTitle" />
