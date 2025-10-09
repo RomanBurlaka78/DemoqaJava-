@@ -1,4 +1,4 @@
-package automatiom.tests.tests;
+package automatiom.tests.tests.elements.text_box;
 
 import automatiom.tests.ElementsPage;
 import automatiom.tests.ElementsTextBoxPage;

@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/elements/text_box/ElementsPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +21,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="test" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test_branch" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,12 +96,12 @@
       <module name="szablon_javaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="automatiom.tests.tests.*" />
+          <option name="PATTERN" value="automatiom.tests.tests.elements.text_box.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
-      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTest" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.elements.text_box.ElementsPageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -100,12 +113,12 @@
       <module name="szablon_javaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="automatiom.tests.tests.*" />
+          <option name="PATTERN" value="automatiom.tests.tests.elements.text_box.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
-      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTest" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.elements.text_box.ElementsPageTest" />
       <option name="METHOD_NAME" value="testGetTitle" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -118,12 +131,12 @@
       <module name="szablon_javaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="automatiom.tests.tests.*" />
+          <option name="PATTERN" value="automatiom.tests.tests.elements.text_box.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
-      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTest" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.elements.text_box.ElementsPageTest" />
       <option name="METHOD_NAME" value="testGoToElementsPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -136,12 +149,12 @@
       <module name="szablon_javaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="automatiom.tests.tests.*" />
+          <option name="PATTERN" value="automatiom.tests.tests.elements.text_box.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
-      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTest" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.elements.text_box.ElementsPageTest" />
       <option name="METHOD_NAME" value="testVerifyTextBox" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -154,12 +167,12 @@
       <module name="szablon_javaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="automatiom.tests.tests.*" />
+          <option name="PATTERN" value="automatiom.tests.tests.elements.text_box.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="automatiom.tests.tests" />
-      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.ElementsPageTest" />
+      <option name="MAIN_CLASS_NAME" value="automatiom.tests.tests.elements.text_box.ElementsPageTest" />
       <option name="METHOD_NAME" value="testVerifyTextBoxForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -170,10 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ElementsPageTest.testGoToElementsPage" />
-        <item itemvalue="TestNG.ElementsPageTest.testVerifyTextBox" />
         <item itemvalue="TestNG.ElementsPageTest.testVerifyTextBoxForm" />
+        <item itemvalue="TestNG.ElementsPageTest.testVerifyTextBox" />
+        <item itemvalue="TestNG.ElementsPageTest.testGoToElementsPage" />
         <item itemvalue="TestNG.ElementsPageTest.testGetTitle" />
+        <item itemvalue="TestNG.ElementsPageTest" />
       </list>
     </recent_temporary>
   </component>

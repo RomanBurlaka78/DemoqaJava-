@@ -61,10 +61,21 @@ public class ProjectUtils {
     }
 
     static WebDriver createDriver() {
-        WebDriver driver = new ChromeDriver(ProjectUtils.chromeOptions);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless"); // стабильно на Windows
+        chromeOptions.addArguments("--window-size=1920,1080");
+        chromeOptions.addArguments("--disable-gpu");
+        chromeOptions.addArguments("--remote-allow-origins=*");
 
-        return driver;
+        if (!System.getProperty("os.name").toLowerCase().contains("win")) {
+            chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+            chromeOptions.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
+        } else {
+            chromeOptions.addArguments("--user-data-dir=" + System.getProperty("java.io.tmpdir") + "chrome-profile-" + System.currentTimeMillis());
+        }
+
+        return new ChromeDriver(chromeOptions);
     }
 
     public static void log(String str) {
