@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="09bbe967-7a69-4c37-bcf6-2077df770539" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/ElementsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/tests/elements/text_box/ElementsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/automatiom/tests/runner/ProjectUtils.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +68,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.szablon_javaTest [clean].executor": "Run",
     "Maven.szablon_javaTest [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "TestNG.ElementsPageTest.executor": "Run",
+    "TestNG.ElementsPageTest.testGetTitle.executor": "Run",
     "TestNG.ElementsPageTest.testGoToElementsPage.executor": "Run",
     "TestNG.ElementsPageTests.executor": "Run",
     "TestNG.ElementsPageTests.testGetTitle.executor": "Run",
@@ -91,7 +95,7 @@
       <recent name="D:\1_Java\DemoqaJava-\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ElementsPageTest.testGoToElementsPage">
+  <component name="RunManager" selected="TestNG.ElementsPageTest">
     <configuration name="ElementsPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="szablon_javaTest" />
       <extension name="coverage">
@@ -183,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ElementsPageTest" />
+        <item itemvalue="TestNG.ElementsPageTest.testGetTitle" />
         <item itemvalue="TestNG.ElementsPageTest.testVerifyTextBoxForm" />
         <item itemvalue="TestNG.ElementsPageTest.testVerifyTextBox" />
         <item itemvalue="TestNG.ElementsPageTest.testGoToElementsPage" />
-        <item itemvalue="TestNG.ElementsPageTest.testGetTitle" />
-        <item itemvalue="TestNG.ElementsPageTest" />
       </list>
     </recent_temporary>
   </component>

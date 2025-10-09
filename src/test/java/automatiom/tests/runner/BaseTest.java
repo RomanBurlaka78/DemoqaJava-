@@ -1,135 +1,113 @@
 package automatiom.tests.runner;
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Allure;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import java.io.ByteArrayInputStream;
 import java.lang.reflect.Method;
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 
 public abstract class BaseTest {
-    private WebDriver driver;
-
-    private WebDriverWait wait2;
-    private WebDriverWait wait5;
-    private WebDriverWait wait10;
+    protected WebDriver driver;
+    private String browser;
 
 
-
-    private void startDriver() {
-        ProjectUtils.log("Browser open");
-
-        driver = ProjectUtils.createDriver();
-    }
-
-    private void clearData() {
-        ProjectUtils.log("Clear data");
-
-    }
-
-    private void loginWeb() {
-        ProjectUtils.log("Login");
-    }
-
-    private void getWeb() {
-        ProjectUtils.log("Get web page: https://demoqa.com/");
-        ProjectUtils.get(driver);
-    }
-
-
-    private void acceptAlert() {
-        ProjectUtils.acceptAlert(driver);
-    }
-
-    private void stopDriver() {
-        try {
-            driver.quit();
-        } catch (Exception ignore) {
-        }
-
-        closeDriver();
-    }
-
-    private void closeDriver() {
-        if (driver != null) {
-            driver.quit();
-
-            driver = null;
-            wait2 = null;
-            wait5 = null;
-            wait10 = null;
-
-            ProjectUtils.log("Browser closed");
-        }
-    }
-
-
-    @BeforeMethod
-    protected void beforeMethod(Method method) {
-        ProjectUtils.logf("Run %s.%s", this.getClass().getName(), method.getName());
-        try {
-            clearData();
-            startDriver();
-            getWeb();
-            loginWeb();
-
-        } catch (Exception e) {
-            closeDriver();
-            throw new RuntimeException(e);
-        }
-
-    }
-
-    protected WebDriver getDriver () {
+    protected WebDriver getDriver() {
         return driver;
     }
 
-    protected WebDriverWait getWait2 () {
-        if (wait2 == null) {
-            wait2 = new WebDriverWait(getDriver(), Duration.ofSeconds(2));
-        }
+    List<String> optionalBrowser = List.of("firefox", "chrome", "edge");
+    Random random = new Random();
+    String optionalItem = optionalBrowser.get(random.nextInt(optionalBrowser.size()));
 
-        return wait2;
+
+    @BeforeClass
+    @Parameters("browser")
+    protected void beforeClass() {
+        this.browser = "chrome";
+        Arrays.stream(this.getClass().getMethods())
+                .filter(m -> m.getAnnotation(Test.class) != null && m.getAnnotation(Ignore.class) == null)
+                .collect(Collectors.toList());
+
     }
 
-    protected WebDriverWait getWait5 () {
-        if (wait5 == null) {
-            wait5 = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
+    @BeforeMethod
+    public WebDriver setUp() {
+
+        switch (browser.toLowerCase()) {
+            case "chrome":
+                WebDriverManager.chromedriver().setup();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless"); // стабильно на Windows
+                chromeOptions.addArguments("--window-size=1920,1080");
+                chromeOptions.addArguments("--disable-gpu");
+                chromeOptions.addArguments("--remote-allow-origins=*");
+
+                if (!System.getProperty("os.name").toLowerCase().contains("win")) {
+                    chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+                    chromeOptions.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
+                } else {
+                    chromeOptions.addArguments("--user-data-dir=" + System.getProperty("java.io.tmpdir") + "chrome-profile-" + System.currentTimeMillis());
+                }
+                driver = new ChromeDriver(chromeOptions);
+
+                break;
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--width=1920");
+                firefoxOptions.addArguments("--height=1080");
+                firefoxOptions.addArguments("--headless");
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
+            case "edge":
+                WebDriverManager.edgedriver().setup();
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--window-size=1920,1080");
+                edgeOptions.addArguments("--headless");
+                driver = new EdgeDriver(edgeOptions);
+                break;
+            default:
+                throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
 
-        return wait5;
+
+        driver.get("https://demoqa.com/");
+        return driver;
     }
 
-    protected WebDriverWait getWait10 () {
-        if (wait10 == null) {
-            wait10 = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
-        }
-
-        return wait10;
-    }
 
     @AfterMethod
-    protected void afterMethod(Method method, ITestResult testResult) {
-
-        if (ProjectUtils.isServerRun() && !testResult.isSuccess()) {
-            ProjectUtils.takeScreenshot(driver, method.getName(), this.getClass().getName());
-
+    public void tearDown(ITestResult testResult) {
+        if (testResult.isSuccess()) {
+            driver.quit();
         }
-        if (ProjectUtils.isServerRun() && testResult.isSuccess()) {
-            closeDriver();
+        else if (!testResult.isSuccess()) {
+            Allure.addAttachment(
+                    "screenshot.png",
+                    "image/png",
+                    new ByteArrayInputStream(((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES)),
+                    "png");
+        } else {
+            System.out.println("Failed: " + testResult.getTestClass());
         }
-
-
-        if ( !(!ProjectUtils.isServerRun() && !testResult.isSuccess() && !ProjectUtils.closeBrowserIfError())) {
-            stopDriver();
-        }
-
-        ProjectUtils.logf("Execution time is %o sec\n\n", (testResult.getEndMillis() - testResult.getStartMillis()) / 1000);
     }
-
-
 }
-
